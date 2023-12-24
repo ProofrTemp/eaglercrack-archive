@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EaglercrackX</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    
+    <nav class="nav">
+      <div class="logo">
+        <img src="/assets/eaglercraft.jpg" alt="Logo">
+        <a href="/index.html"><h1>EaglercrackX</h1></a>
+      </div>
+      <div class="spacer"></div>
+      <ul class="navElements">
+          <li class="active">
+              <a href="/index.html">Clients</a>
+          </li>
+          <li>
+              <a href="/sources.html">Sources</a>
+          </li>
+          <li>
+              <a href="/other.html">Others</a>
+          </li>
+      </ul>
+<!--start blank -->
+      <div style="margin: 0 30px 0 0;">
+       <button> <a class="button2" href="https://google.com">
+            about:blank
+        </a>
+        </button>
+    </div>
+
+<script>
+    var urlObj = new window.URL(window.location.href);
+    var url = "https://eaglercrack-archive.vercel.app";
+    if (url) {
+      var win;
+
+      document.querySelector('button').onclick = function() {
+        if (win) {
+          win.focus();
+        } else {
+          win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          var iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+        }
+        document.querySelector('button').style.bacground = 'grey';
+        document.querySelector('button').innerHTML = "Play Now";
+      };
+    }
+
+  </script>
+<!-- end blank -->
+      <div style="margin: 0 30px 0 0;">
+          <a class="button" href="https://discord.gg/qAbTAAv6dU">
+              Join the Discord
+          </a>
+      </div>
+  </nav>
+</head>
+
+<body>
+  <main class="cards">
+    <h1 class="cards__heading">Soon...</h1>
+    <div class="cards cards">
+      <div class="cards__inner">
+        <div class="cards__card card">
+          <h2 class="card__heading">Looks like this page is coming soon...</h2>
+          <ul role="list" class="card__bullets flow"> 
+            <li><a href="/index.html">Go home</a></li>
+          </ul>
+        </div>
+      <div class="overlay cards__inner"></div>
+    </div>
+  </main>
+  
+</body>
+</html>
