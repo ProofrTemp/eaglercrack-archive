@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <button id="hello-world">Launch UwUCord</button>
+  <widgetbot
+    server="1098085242469879858"
+    channel="1098085242989977662
+"
+    id="embed"
+    height="650"
+    width="1350"
+  >
+  </widgetbot>
+  <script src="https://unpkg.com/@widgetbot/html-embed"></script>
+
+  <script>
+    const embed = document.getElementById('embed')
+
+    document.getElementById('hello-world').addEventListener('click', () => {
+      embed.emit(
+        'sendMessage',
+        `Hello world! from \`@widgetbot/html-embed!\`\n` +
+          `<https://codesandbox.io/s/y32o59nn0v>`
+      )
+    })
+
+    embed.on('signIn', data => {
+      console.log(`You've signed in as ${data.name}`)
+    })
+  </script>
+
+  Created by royalxvirus <button title="Github" class="action primary tocart" onclick=" window.open('https://github.com/royalxvirus', '_blank'); return false;">Github</button>
+  <button title="Replit" class="action primary tocart" onclick=" window.open('https://replit.com/@royalxvirus', '_blank'); return false;">Replit</button>
+  <button title="PayPal" class="action primary tocart" onclick=" window.open('https://www.paypal.com/donate/?business=2CCCHC2TC445Y&no_recurring=0&currency_code=USD', '_blank'); return false;">Donate</button
+
+</body>
+
+</html>
